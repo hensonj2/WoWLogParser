@@ -8,6 +8,7 @@ https://wow.gamepedia.com/COMBAT_LOG_EVENT
 ## Input Prerequisites
 1. /combatlog must be enabled (With Advanced Combat Logging enabled in System > Network)
 2. Supports python3 (built for Windows 10)
+3. Supports WoW patch 8.3 (01/30/2020)
 
 ## Output
 - Creates file for every mechanic tracked for each boss while logging.
