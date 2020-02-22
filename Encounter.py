@@ -24,11 +24,14 @@ def Encounter(raid, line, info, boss, pulls, ifile):
             end = 0
         if (info[3] == 'SPELL_CAST_SUCCESS') and (line[9] in healIDs):
             eTime = timeDif(timeStart, info[1])
+            line[2] = sub('-\w*','',line[2])
             hparse = hparse + str(pulls) + ',' + eTime + ',' + line[10] + ',' + line[2] + '\r\n'
         for i in range(0,len(raid[boss])):
             if len(line) < 11:
                 continue
             if (info[3] in raid[boss][i][0]) and (line[10] in raid[boss][i]):
+                if "Player" not in line[5]:
+                    continue
                 line[6] = sub('-\w*','',line[6])
                 if info[3] == 'SPELL_AURA_APPLIED' :
                     if raid[boss][i][2] == 'sum' :
