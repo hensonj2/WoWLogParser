@@ -29,7 +29,10 @@ https://wow.gamepedia.com/COMBAT_LOG_EVENT
 		- output [pull#,player,number]
 	-	hit - records the hit, but not the damage done (used by dam, cast/aura use this by default)
 		- output of dam : same, minus damage column
-		
+- Healing Tracking:
+  - Records each individual cast of a major healing cooldown.
+    - Spells tracked: Tranquility, Avenging Wrath, Aura Mastery, Healing Tide Totem, Spirit Link Totem, Power Word: Barrier, Pain Suppression, Divine Hymn, Guardian Spirit, Revival, Life Cocoon
+  - Format: [pull#,deltatime,spellname,player]
 ## Known Issues:
 - General:
   - results files are not separated by difficulty.
