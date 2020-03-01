@@ -26,8 +26,17 @@ https://wow.gamepedia.com/COMBAT_LOG_EVENT
 	-	avg - avg # over entire fight (used by dam). ex. (dam, avg) 
 		- output [pull#,player,number]
 	-	sum - total # over entire fight (used by dam,aura,cast)
-		- ex. (hit, sum) - total # of times player got hit by ability
-			- output [pull#,player,number]
+		- output [pull#,player,number]
 	-	hit - records the hit, but not the damage done (used by dam, cast/aura use this by default)
 		- output of dam : same, minus damage column
-		
+- Healing Tracking:
+  - Records each individual cast of a major healing cooldown.
+    - Spells tracked: Tranquility, Avenging Wrath, Aura Mastery, Healing Tide Totem, Spirit Link Totem, Power Word: Barrier, Pain Suppression, Divine Hymn, Guardian Spirit, Revival, Life Cocoon
+  - Format: [pull#,deltatime,spellname,player]
+## Known Issues:
+- General:
+  - results files are not separated by difficulty.
+    - e.g: Guild Method pulls Wrathion(Heroic) 3 times, and then later comes back to pull Wrathion(Mythic) 2 times. Each Wration results file records 5 pulls worth of data.
+- Tracking Healing: 
+  - Avenging Wrath is being tracked without considering Paladin specialization because they share the same spellID.
+  
