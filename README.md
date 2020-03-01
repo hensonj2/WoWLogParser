@@ -37,6 +37,7 @@ https://wow.gamepedia.com/COMBAT_LOG_EVENT
 - General:
   - results files are not separated by difficulty.
     - e.g: Guild Method pulls Wrathion(Heroic) 3 times, and then later comes back to pull Wrathion(Mythic) 2 times. Each Wration results file records 5 pulls worth of data.
+  - N'Zoth the Corruptor currently not tracking any abilities (aside from healing CDs).   
 - Tracking Healing: 
   - Avenging Wrath is being tracked without considering Paladin specialization because they share the same spellID.
   
