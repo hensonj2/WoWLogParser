@@ -26,8 +26,7 @@ https://wow.gamepedia.com/COMBAT_LOG_EVENT
 	-	avg - avg # over entire fight (used by dam). ex. (dam, avg) 
 		- output [pull#,player,number]
 	-	sum - total # over entire fight (used by dam,aura,cast)
-		- ex. (hit, sum) - total # of times player got hit by ability
-			- output [pull#,player,number]
+		- output [pull#,player,number]
 	-	hit - records the hit, but not the damage done (used by dam, cast/aura use this by default)
 		- output of dam : same, minus damage column
 		
