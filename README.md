@@ -31,3 +31,10 @@ https://wow.gamepedia.com/COMBAT_LOG_EVENT
 	-	hit - records the hit, but not the damage done (used by dam, cast/aura use this by default)
 		- output of dam : same, minus damage column
 		
+## Known Issues:
+- General:
+  - results files are not separated by difficulty.
+    - e.g: Guild Method pulls Wrathion(Heroic) 3 times, and then later comes back to pull Wrathion(Mythic) 2 times. Each Wration results file records 5 pulls worth of data.
+- Tracking Healing: 
+  - Avenging Wrath is being tracked without considering Paladin specialization because they share the same spellID.
+  
